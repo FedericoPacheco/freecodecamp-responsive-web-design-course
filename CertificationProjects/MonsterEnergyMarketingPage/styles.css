@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana;
+  scroll-padding-top: 6rem;
+
+  --header-color: black;
+  --a-clicked-color: white;
+  --p-color: white;
+  --img-border-color: white;
+  --main-color: #121212;
+  --monster-color: #9fe314;
+}
+
+body {
+  margin: 0;
+  min-width: 800px;
+  min-height: 600px;
+}
+
+#header {
+  background-color: var(--header-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+}
+
+#header-img {
+  width: 12rem;
+  height: 5rem;
+  padding-left: 0.5rem;
+  object-fit: cover;
+}
+
+#nav-bar ul  {
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#nav-bar ul li {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+}
+
+#nav-bar ul li:last-of-type {
+  margin-right: 1rem;
+}
+
+
+#nav-bar ul li a:visited {
+  color: var(--monster-color);
+}
+
+#nav-bar ul li a:hover {
+  color: var(--a-clicked-color);
+}
+
+#nav-bar ul li a:active {
+  color: var(--monster-color);
+}
+
+
+main {
+  background-color: var(--main-color);
+  border: 1px solid black;
+}
+
+h1 {
+  color: var(--monster-color);
+  padding: 1rem;
+}
+
+#can-description {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(var(--monster-color), var(--main-color));
+  margin: 0 1rem;
+}
+
+p {
+  color: var(--p-color);
+  font-size: 20;
+  padding-right: 1rem;
+}
+
+.can {
+  width: 12.5rem;
+  height: 25rem;
+  padding: 2rem;
+}
+
+#video {
+  padding: 1rem;
+  margin-left: 2rem;
+  border: none;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+#team-monster img {
+  width: 22.5rem;
+  height: 17.5rem;
+  object-fit: cover;
+  margin: 1rem;
+  border: 0.15rem solid var(--img-border-color);
+}
+
+span {
+  font-style: italic;
+  font-weight: bold;
+  color: var(--monster-color);
+}
+
+footer {
+  background-color: var(--header-color);
+  padding: 1rem 1rem;
+}
+
+legend {
+  color: var(--p-color);
+  font-size: 20;
+  text-align: center;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.25rem;
+}
+
+input[type = "email"] {
+  max-width: 30rem;
+  margin: 1rem auto;
+  text-align: center;
+  background-color: var(--main-color);
+  color: var(--p-color);
+  padding: 0.25rem;
+  font-size: 16;
+}
+
+input[type = "submit"] {
+  max-width: 10rem;
+  margin: 0 auto;
+  background-color: var(--monster-color);
+  color: var(--header-color);
+  font-weight: bold;
+  padding: 0.25rem;
+  font-size: 18;
+}
+
+@media (max-width:1000px) {
+  span {
+    color: red;
+  }
+}

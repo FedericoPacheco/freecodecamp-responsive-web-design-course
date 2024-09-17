@@ -1,0 +1,80 @@
+body {
+  background-color: #002643;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  background-color: #00477c;
+  margin: 1vh 1vh;
+}
+
+.sexo {
+  border: none;
+}
+
+p, h1, h2 {
+  font-family: Arial;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  margin: 1vh auto;
+  width: 5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+label, legend {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  margin: 1vh 1vw;
+  font-family: Arial;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+}
+
+select {
+  width: 100%;
+  font-size: 1rem;
+  font-family: Arial;
+}
+
+.inline {
+  display: inline;
+  width: unset;
+}
+
+textarea {
+  margin: 1vh 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  font-family: Arial;
+  font-size: 0.8rem;
+}
+
+input[type = "submit"] {
+  width: 20%;
+  margin: 0 auto;
+}
+
+

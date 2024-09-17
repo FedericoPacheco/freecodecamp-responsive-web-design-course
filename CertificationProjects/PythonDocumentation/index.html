@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An example of a documentation page" />
+    <title>Python documentation</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,500" rel="stylesheet">
+  </head>
+  <body>
+    <main class = "whole-page" id = "main-doc">
+      <div class = "navigation" id = "navigation">
+        <nav id = "navbar">
+        <header>Python documentation</header>
+        <ul>
+          <li><a class = "nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class = "nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a></li>
+          <li><a class = "nav-link" href="#Control_Flow">Control Flow</a></li>
+          <li><a class = "nav-link" href="#Functions">Functions</a></li>
+          <li><a class = "nav-link" href="#Lists_and_Loops">Lists and Loops</a></li>
+        </ul>
+      </nav>      
+      </div>
+      <div class = "documentation" id = "documentation">
+        <section id = "Introduction" class = "main-section">
+          <header>Introduction</header>
+            <p>
+              Python is a high-level, interpreted programming language that emphasizes code readability and simplicity. Created by Guido van Rossum and first released in 1991, it has become one of the most popular languages in the world due to its versatility and ease of use.</p>
+            <p>Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Some of its key features include:</p>
+            <ul>
+              <li>Simple and easy-to-learn syntax</li>
+              <li>Extensive standard library</li>
+              <li>Dynamically typed variables</li>
+              <li>Cross-platform compatibility</li>
+              <li>Open-source community support</li>
+            </ul>
+            <div class = "code-box">
+              <code>
+                # Hello World in Python<br>
+                print("Hello, World!")<br>
+              </code>
+            </div>  
+        </section>
+        <section id = "Variables_and_Data_Types" class = "main-section">
+          <header>Variables and Data Types</header>
+            <p>In Python, variables are dynamically typed, meaning you don’t need to declare their type before assigning a value. Some of the core data types used in Python are:</p>
+            <ul>
+              <li>Integers (int)</li>
+              <li>Floats (float)</li>
+              <li>Strings (str)</li>
+              <li>Booleans (bool) </li>
+            </ul>
+            <div class = "code-box">
+              <code>
+                # Example of variables and data types<br>
+                x = 5           # integer<br>
+                y = 3.14        # float<br>
+                name = "Python" # string<br>
+                is_cool = True  # boolean<br>
+              </code>
+            </div>
+            <p>Python also supports complex data structures like lists, tuples, dictionaries, and sets, which help organize and manipulate data efficiently. These data types are flexible and can hold different types of values.</p>
+        </section>
+        <section id = "Control_Flow" class = "main-section">
+          <header>Control Flow</header>
+            <p>Python offers standard control flow structures such as if-else, for loops, and while loops, which allow you to make decisions and repeat operations based on conditions. Control flow is essential when automating tasks and handling decision-making processes in programs.</p>
+            <p>In addition to conditional statements and loops, Python offers logical operators like:</p>
+            <ul>
+              <li>not</li>
+              <li>or</li>
+              <li>and</li>
+            </ul>
+            <p>These operators are used to combine or negate conditions.</p>
+            <div class = "code-box">
+              <code
+                # Example of control flow in Python<br>
+                x = 10<br>
+                if x > 5:<br>
+                <span>print("x is greater than 5")</span><br>
+                else:<br>
+                <span>print("x is 5 or less")</span><br>
+              </code>
+            </div>
+        </section>
+        <section id = "Functions" class = "main-section">
+          <header>Functions</header>
+            <p>Functions in Python are defined using the def keyword and are used to encapsulate reusable code. They can take parameters and return values, making them a powerful tool for writing modular code. This modularity enables better organization and reuse of code.</p>
+            <div class = "code-box">
+              <code>
+                # Example of a Python function<br>
+                def greet(name):<br>
+                <span>return f"Hello, {name}!"</span><br><br>
+                print(greet("Alice"))
+              </code>
+            </div>
+            <p>Python also supports anonymous functions, known as lambdas, which are small, single-line functions. Lambdas are useful for short operations that don't need a full function definition.</p>
+        </section>
+        <section id = "Lists_and_Loops" class = "main-section">
+          <header>Lists and Loops</header>
+            <p>Lists are a fundamental data structure in Python, allowing you to store and manipulate ordered collections of items. Python makes it easy to iterate over lists using loops, which simplifies working with sequences of data.</p>
+            <p>Common list operations include adding or removing items, sorting, slicing, and filtering. Python’s list comprehensions provide a concise way to create lists based on existing ones, making loops more efficient and readable.</p>
+            <div class = "code-box">
+              <code>
+                # Example of list and loop in Python<br>
+                numbers = [1, 2, 3, 4, 5]<br>
+                squared = [n**2 for n in numbers]<br>
+                print(squared)  # Output: [1, 4, 9, 16, 25]
+              </code>
+            </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

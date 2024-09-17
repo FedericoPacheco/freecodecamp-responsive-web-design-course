@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "es">
+  <head>
+    <title>Inscripción Interbarz</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id = "title"><strong>Inscripción Interbarz</strong></h1> 
+    <p id = "description">
+      <em>Fecha</em>: sábado 14 de septiembre de 2024. </br>
+      <em>Lugar</em>: SFECalistenia Centro de Entrenamiento.</br>
+      <em>Costo</em>: $5000 </br>
+    </p> 
+    <img src = "https://scontent.fsfn7-1.fna.fbcdn.net/v/t39.30808-6/240580866_1790733741130085_721353306703098641_n.png?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=3zBkyclpIm4Q7kNvgGibs2v&_nc_ht=scontent.fsfn7-1.fna&_nc_gid=AyRJMsaoAvTCh8EFHexkA1w&oh=00_AYCaluUrS8ZEYszM4oEAzoRxYmdnyU8buwJHPBAtKYcbrA&oe=66E11ABC" alt = "Logo Santa Fe Calistenia">
+    <form id = "survey-form">
+      <fieldset>
+        <h2> Datos básicos</h2>
+        <label id = "name-label" for = "name">Nombre completo <input id = "name" type = "text" placeholder = "Nicolás Passante" required></label>
+        <label id = "email-label" for = "email">Correo electrónico<input id = "email" type = "email" placeholder = "nicopassante@gmail.com" required></label>
+        <label id = "number-label" for = "number">Edad<input id = "number" type = "number" min = 16 max = 100 placeholder = 28 required></label>
+        <fieldset class = "sexo">
+          <legend>Sexo</legend>
+          <label for = "masculino"><input class = "inline" id = "masculino" type = "radio" name = "sexo" value = "masculino" checked>Masculino</label>
+          <label for = "femenino"><input class = "inline" id = "femenino" type = "radio" name = "sexo" value = "femenino">Femenino</label>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <h2>Categoría</h2>
+        <select id = "dropdown" required>
+          <option value = "-"> Seleccionar una </option>
+          <option value = "streetlifting-classic"> Streetlifting (classic) </option>
+          <option value = "streetlifting-all4"> Streetlifting (all 4) </option>
+          <option value = "heavy repz"> Heavy repz </option>
+          <option value = "circuitos de resistencia"> Circuitos de resistencia </option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <h2>Seguridad física</h2>
+        <label for = "descargo-responsabilidad"><input class = "inline" id="descargo-responsabilidad" type="checkbox" name="descargo-responsabilidad" value = "descargo-responsabilidad" required/>Comprendo que el gimnasio no se hace responsable por las eventuales lesiones que pudiera sufrir en la competencia.</label>
+        <label for = "all-in"><input class = "inline" id="all-in" type = "checkbox" name = "all-in" value = "all-in" required>Estoy dispuesto a darlo todo.</label>
+        <label for="comentarios-adicionales">Comentarios adicionales:<textarea id="comentarios-adicionales" name="comentarios-adicionales" rows="3" cols="30" placeholder="Me duele un poco el hombro ya..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <h2>Pago</h2>
+        <label>
+          Mediante transferencia al alias: santafecalistenia. Adjuntar comprobante.
+        </label>
+        <input id="pago" type = "file" required name = "pago">
+      </fieldset>
+      <input id = "submit" type="submit" value="Inscribirse" />
+    </form>
+  </body>
+</html>

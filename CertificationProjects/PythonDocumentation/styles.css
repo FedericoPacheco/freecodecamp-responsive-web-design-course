@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 800px;
+  min-height: 600px;
+}
+
+.navigation {
+  border-right: 0.25rem solid black;
+  position: fixed;
+  left: 0;
+  width: 14rem;
+  height: 100vh;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  margin: 0;
+  background-color: #9fb0cc;
+}
+
+.navigation header, .documentation header {
+  font-weight: bold;
+  font-size: 24;
+}
+
+.navigation ul li {
+  list-style: none;
+  margin-left: -3vw;
+  padding: 0.25rem 0;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+}
+
+.documentation {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 14rem);
+  background-color: #d9e5fa;
+  padding: 0.5rem 0.5rem;
+}
+
+.documentation .code-box {
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  background-color: #293447;
+  margin-bottom: 1rem;
+}
+
+.documentation .code-box code {
+  color: white;
+  font-family: "courier new";
+}
+
+.documentation .code-box code span {
+  margin-left: 2rem; 
+  font-family: "courier new";
+}
+
+
+@media (max-width: 1000px) {
+  .navigation {
+    border-bottom: 0.25rem solid black;
+    border-right: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5.5rem;
+    z-index: 1;
+  }
+
+  .navigation nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline-start: 0;
+  }
+
+  .documentation {
+    position: absolute;
+    width: 100%;
+    top: 5.5rem;
+    background-color: #d9e5fa;
+    padding: 0.5rem 0.5rem;
+  }
+
+  * { /* Hacer que cuando se clikee en un anchor la navegación se desplace un poco, 
+  cosa de que la barra de navegación no tape el titulo al que lleva dicho anchor*/
+    scroll-padding-top: 5.5rem;
+  }
+}
